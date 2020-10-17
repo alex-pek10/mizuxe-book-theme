@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+// Variables
+// $theme-colors: (
+//   "primary": #0074d9,
+//   "danger": #ff4136,
+// );
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom SCSS
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
