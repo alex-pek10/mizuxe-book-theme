@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <!-- endbuild -->
   </head>
-  <body>
+  <body id="home" data-spy="scroll" data-target="#main-nav">
     <!--[if IE]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -23,7 +23,7 @@
       </p>
     <![endif]-->
 
-    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+    <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top py-4">
       <div class="container">
         <a href="#home" class="navbar-brand">
           <img src="images/mlogo.png" width="50" height="50" alt="" />
@@ -447,7 +447,7 @@
     <section id="contact" class="bg-light py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9">
+          <div class="col-md-8 col-lg-9">
             <h3>Get In Touch</h3>
             <p class="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -491,12 +491,19 @@
             </form>
           </div>
 
-          <div class="col-lg-3 align-self-center">
-            <img src="images/mlogo.png" alt="" class="img-fluid">
+          <div class="col-md-4 col-lg-3 align-self-center">
+            <img src="images/mlogo.png" alt="" class="d-none d-md-block img-fluid" />
           </div>
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="py-5 bg-primary text-white">
+      <div class="container text-center">
+        <p class="lead">Copyright &copy; 2020</p>
+      </div>
+    </footer>
 
     <!-- build:js scripts/vendor.js -->
     <script
