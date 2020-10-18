@@ -55,6 +55,13 @@ body {
   }
 }
 
-.info-header {
+#authors {
+  .card:hover {
+    background: $primary;
+    color: white;
 
+    h5, a {
+      color: white !important;
+    }
+  }
 }
