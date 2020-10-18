@@ -1,18 +1,34 @@
 @charset "UTF-8";
 
 // Variables
-// $theme-colors: (
-//   "primary": #0074d9,
-//   "danger": #ff4136,
-// );
+$primary: rgba(50, 146, 166, 1);
+$theme-colors: (
+  "primary": $primary,
+);
+
+$primary-overlay: rgba(50, 146, 166, 0.8);
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Custom SCSS
+body {
+  margin-top: 105px;
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  background: white;
+
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+  }
 }
